@@ -1,15 +1,16 @@
 import React, { useId } from "react";
 
-function InputBox() {
+function InputBox({
   label,
-    amount,
-    onAmountChange,
-    onCurrencyChnage,
-    (currencyOptions = []),
-    (selectedCurrency = "USD"),
-    (amountDisabled = false),
-    (currencyDisabled = false),
-    (className = "");
+  amount,
+  onAmountChange,
+  onCurrencyChnage,
+  currencyOptions = [],
+  selectedCurrency = "USD",
+  amountDisabled = false,
+  currencyDisabled = false,
+  className = "",
+}) {
   const id = useId();
   return (
     <div className={`bg-white p-3 rounded-lg text-sm flex`}>
